@@ -50,7 +50,7 @@ function MobileHeader({handleDrawerToggle}) {
                     </Grid>
                 </Grid>
                 <Grid item={true} xs={10}>
-                    <p className="uppercase text text-align-center font-size-small font-weight-bold">The Pig Empire</p>
+                    <p className="uppercase text text-align-center font-size-small font-weight-bold">Ice Rock</p>
                 </Grid>
                 <Grid item={true} xs={1}>
                     <Menu className={classes.icon} onClick={handleClick}/>
