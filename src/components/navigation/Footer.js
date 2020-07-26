@@ -21,35 +21,39 @@ function Footer() {
                                 </p>
 
                                 <p>
+                                <p>
+                                    <a
+                                        href="https://shop.icerock.com"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                        Shop
+                                    </a>
+                                </p>
+
+                                <p>
+                                    <Link to="/whatsnew"
+                                          className={` dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
+                                        What's New
+                                    </Link>
+                                </p>
+
+                                <p>
+                                    <Link to="/products"
+                                          className={`nav-link dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
+                                        Products
+                                    </Link>
+                                </p>
+
+                                <p>
+                                    <Link to="/operations"
+                                          className={`nav-link dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
+                                        Operations
+                                    </Link>
+                                </p>
+
+                                <p>
                                     <Link to="/contact"
-                                          className={` dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
-                                        About
-                                    </Link>
-                                </p>
-
-                                <p>
-                                    <Link to="/feed"
-                                          className={` dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
-                                        Feed Mill
-                                    </Link>
-                                </p>
-
-                                <p>
-                                    <Link to="/about"
-                                          className={`nav-link dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
-                                        Careers
-                                    </Link>
-                                </p>
-
-                                <p>
-                                    <Link to="/about"
-                                          className={`nav-link dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
-                                        News
-                                    </Link>
-                                </p>
-
-                                <p>
-                                    <Link to="/about"
                                           className={`nav-link dark-grey-text nav-link margin-vertical-small font-size-small uppercase`}>
                                         Contact Us
                                     </Link>
