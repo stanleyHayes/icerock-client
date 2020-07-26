@@ -1,25 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+import ScrollToTop from "./components/shared/ScrollToTop";
+import AboutPage from "./pages/about/AboutPage";
+import ContactPage from "./pages/contact/ContactPage";
+import HomePage from "./pages/home/HomePage";
+import ProductsPage from "./pages/products/ProductsPage";
+import ProductDetailPage from "./pages/products/ProductDetailPage";
+import WhatsNewPage from "./pages/whatsnew/WhatsNewPage";
+import OperationsPage from "./pages/operations/OperationsPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop>
+        <Switch>
+          <Route path="/about" exact={true}>
+            <AboutPage />
+          </Route>
+
+          <Route path="/contact" exact={true}>
+            <ContactPage />
+          </Route>
+
+          <Route path="/" exact={true}>
+            <HomePage />
+          </Route>
+
+          <Route path="/products" exact={true}>
+            <ProductsPage />
+          </Route>
+
+          <Route path="/products/:productId" exact={true}>
+            <ProductDetailPage />
+          </Route>
+
+          <Route path="/whatsnew" exact={true}>
+            <WhatsNewPage />
+          </Route>
+
+          <Route path="/operations" exact={true}>
+            <OperationsPage />
+          </Route>
+
+        </Switch>
+      </ScrollToTop>
+    </BrowserRouter>
   );
 }
 
