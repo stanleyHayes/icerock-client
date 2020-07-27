@@ -493,3 +493,7 @@ html, body {
 .font-size-huge{
   font-size: 72px;
 }
+
+.light-blue-text{
+  color: rgb(0, 0, 180);
+}

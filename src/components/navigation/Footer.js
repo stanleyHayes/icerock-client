@@ -21,12 +21,11 @@ function Footer() {
                                 </p>
 
                                 <p>
-                                <p>
                                     <a
                                         href="https://shop.icerock.com"
                                         target="_blank"
                                         rel="noreferrer noopener"
-                                        className={` center-align margin-vertical-small uppercase font-weight-bold`}>
+                                        className={` center-align margin-vertical-small font-size-small nav-link dark-grey-text uppercase`}>
                                         Shop
                                     </a>
                                 </p>
