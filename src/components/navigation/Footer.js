@@ -26,7 +26,7 @@ function Footer() {
                                         href="https://shop.icerock.com"
                                         target="_blank"
                                         rel="noreferrer noopener"
-                                        className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                        className={` center-align margin-vertical-small uppercase font-weight-bold`}>
                                         Shop
                                     </a>
                                 </p>
