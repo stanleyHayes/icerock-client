@@ -38,7 +38,7 @@ html, body {
 }
 
 .font-size-medium {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .dark-grey-text {
@@ -75,14 +75,14 @@ html, body {
 
 .title {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 
 @media screen and (max-width: 700px) {
   .title {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
   }
 }
 
@@ -280,7 +280,7 @@ html, body {
 }
 
 .font-size-small {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .platform {
@@ -349,14 +349,14 @@ html, body {
 }
 
 .responsive-title {
-  font-size: 58px;
-  font-weight: 900;
+  font-size: 48px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
   .responsive-title {
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 500;
   }
 }
 
@@ -390,9 +390,9 @@ html, body {
   color: #333333;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .sub-header, .profile {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -496,4 +496,12 @@ html, body {
 
 .light-blue-text{
   color: rgb(0, 0, 180);
+}
+
+.shadow{
+  transition: all ease-in 500ms;
+}
+
+.shadow:hover{
+  box-shadow: 5px 5px 3px #dddddd;
 }

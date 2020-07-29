@@ -8,7 +8,7 @@ import HomePage from "./pages/home/HomePage";
 import ProductsPage from "./pages/products/ProductsPage";
 import ProductDetailPage from "./pages/products/ProductDetailPage";
 import WhatsNewPage from "./pages/whatsnew/WhatsNewPage";
-import OperationsPage from "./pages/operations/OperationsPage";
+import ReviewsPage from "./pages/reviews/ReviewsPage";
 
 function App() {
   return (
@@ -39,8 +39,8 @@ function App() {
             <WhatsNewPage />
           </Route>
 
-          <Route path="/operations" exact={true}>
-            <OperationsPage />
+          <Route path="/reviews" exact={true}>
+            <ReviewsPage />
           </Route>
 
         </Switch>

@@ -2,9 +2,9 @@ import React from "react";
 import Layout from "../../components/layout/Layout";
 import {Container, Grid} from "@material-ui/core";
 import {connect} from "react-redux";
-import Product from "../../components/shared/Product";
+import Review from "../../components/shared/Review";
 
-function ProductsPage({products}) {
+function ReviewsPage({reviews}) {
 
     return (
         <Layout>
@@ -12,24 +12,24 @@ function ProductsPage({products}) {
                 <Container>
                     <Grid container={true} spacing={3} justify="center">
                         <Grid item={true} xs={12}>
-                            <p className="uppercase margin-vertical-large sub-header">Products</p>
+                            <p className="uppercase margin-vertical-large sub-header">Customer Reviews</p>
                         </Grid>
                     </Grid>
                     <Grid container={true} spacing={3}>
                         {
-                            (!products.length) ? (
+                            (!reviews.length) ? (
                                 <Grid container={true} item={true} xs={12} alignItems="center" justify="center">
                                     <Grid item={true}>
                                         <p className="uppercase font-weight-bold font-size-medium grey-text">
-                                            No Products Available
+                                            No Reviews Available
                                         </p>
                                     </Grid>
                                 </Grid>
                             ) : (
-                                products.map((product, index) => {
+                                reviews.map((review, index) => {
                                     return (
                                         <Grid key={index} item={true} xs={12} md={6} lg={4}>
-                                            <Product product={product}/>
+                                            <Review review={review}/>
                                         </Grid>
                                     )
                                 })
@@ -44,9 +44,9 @@ function ProductsPage({products}) {
 
 const mapStateToProps = state => {
     return {
-        products: state.products.products,
-        loading: state.products.loading
+        reviews: state.reviews.reviews,
+        loading: state.reviews.loading
     }
 }
 
-export default connect(mapStateToProps) (ProductsPage);
+export default connect(mapStateToProps) (ReviewsPage);

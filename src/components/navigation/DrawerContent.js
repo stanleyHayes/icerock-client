@@ -3,7 +3,7 @@ import {
     Divider,
     Grid,
     Container,
-    Avatar
+    Avatar, Button
 } from "@material-ui/core";
 import {Close} from "@material-ui/icons";
 import {Link} from "react-router-dom";
@@ -15,9 +15,6 @@ function DrawerContent({handleDrawerClose}) {
 
     const useStyles = makeStyles(theme => {
         return {
-            button: {
-                textAlign: "center"
-            },
             link: {
                 color: "#777777",
                 textDecoration: "none",
@@ -53,6 +50,14 @@ function DrawerContent({handleDrawerClose}) {
             },
             icon: {
                 fontSize: 24
+            },
+            button: {
+                backgroundColor: "green",
+                color: "white",
+                fontWeight: "bold",
+                fontFamily: "Poppins",
+                paddingTop: 4,
+                paddingBottom: 4
             }
         }
     });
@@ -83,7 +88,7 @@ function DrawerContent({handleDrawerClose}) {
                         <div className={classes.content}>
                             <p>
                                 <Link to="/"
-                                      className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                      className={` ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
                                     Home
                                 </Link>
                             </p>
@@ -91,19 +96,21 @@ function DrawerContent({handleDrawerClose}) {
                             <Divider variant="fullWidth"/>
 
                             <p>
-                                <a
-                                    href="https://shop.icerock.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
-                                    Shop
-                                </a>
+                                <Button className={classes.button} variant="outlined" size="small">
+                                    <a
+                                        href="https://shop.icerock.com"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        className={`${classes.button}  ${classes.link} center-align uppercase font-weight-bold`}>
+                                        Shop
+                                    </a>
+                                </Button>
                             </p>
                             <Divider variant="fullWidth"/>
 
                             <p>
                                 <Link to="/whatsnew"
-                                      className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                      className={`  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
                                     What's new
                                 </Link>
                             </p>
@@ -112,24 +119,33 @@ function DrawerContent({handleDrawerClose}) {
 
                             <p>
                                 <Link to="/products"
-                                      className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                      className={`  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
                                     Products
                                 </Link>
                             </p>
                             <Divider variant="fullWidth"/>
 
                             <p>
-                                <Link to="/operations"
-                                      className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
-                                    Operations
+                                <Link to="/reviews"
+                                      className={`  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                    Reviews
                                 </Link>
                             </p>
                             <Divider variant="fullWidth"/>
 
                             <p>
                                 <Link to="/contact"
-                                      className={`${classes.button}  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                      className={`  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
                                     Contact Us
+                                </Link>
+                            </p>
+
+                            <Divider variant="fullWidth"/>
+
+                            <p>
+                                <Link to="/about"
+                                      className={`  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
+                                    About Us
                                 </Link>
                             </p>
 

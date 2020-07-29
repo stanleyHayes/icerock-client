@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, Toolbar} from "@material-ui/core";
+import {Grid, Toolbar, Button} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
 
@@ -24,6 +24,13 @@ function DesktopHeader() {
             },
             link: {
                 textDecoration: "none"
+            },
+            button: {
+                backgroundColor: "green",
+                color: "white",
+                fontWeight: "bold",
+                fontFamily: "Poppins",
+                borderRadius: 24
             }
         }
     });
@@ -42,50 +49,58 @@ function DesktopHeader() {
                                 width="50"
                                 className={`${classes.logo} brand-name`}
                                 src={`${process.env.PUBLIC_URL}/logo512.png`}
-                                alt="The Pig Empire logo"
+                                alt="Ice Rock"
                             />
                         </Link>
                     </Grid>
                 </Grid>
 
-                <Grid item={true} container={true} lg={8} justify="center" spacing={4}>
+                <Grid item={true} container={true} lg={8} justify="center" spacing={4} alignItems="center">
                     <Grid item={true}>
-                        <Link to="/" className="nav-link uppercase font-size-medium font-weight-bold text">
+                        <Link to="/" className="nav-link uppercase font-size-small font-weight-bold text">
                             Home
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <a
-                            href="https://shop.icerock.com"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className={`${classes.button}  ${classes.link} text center-align margin-vertical-small uppercase font-weight-bold`}>
-                            Shop
-                        </a>
+                        <Button className={classes.button} variant="outlined" size="small">
+                            <a
+                                href="https://shop.icerock.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className={`${classes.link} white-text font-size-small center-align uppercase font-weight-bold`}>
+                                Shop
+                            </a>
+                        </Button>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/whatsnew" className="nav-link uppercase font-size-medium font-weight-bold text">
+                        <Link to="/whatsnew" className="nav-link uppercase font-size-small  font-weight-bold text">
                             What's New
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/products" className="nav-link uppercase font-size-medium font-weight-bold text">
+                        <Link to="/products" className="nav-link uppercase font-size-small font-weight-bold text">
                             products
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/operations" className="nav-link uppercase font-size-medium font-weight-bold text">
-                            Operations
+                        <Link to="/contact" className="nav-link uppercase font-size-small font-weight-bold text">
+                            Contact us
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/contact" className="nav-link uppercase font-size-medium font-weight-bold text">
-                            Contact us
+                        <Link to="/about" className="nav-link uppercase font-size-small font-weight-bold text">
+                            About
+                        </Link>
+                    </Grid>
+
+                    <Grid item={true}>
+                        <Link to="/reviews" className="nav-link uppercase font-size-small font-weight-bold text">
+                            Reviews
                         </Link>
                     </Grid>
                 </Grid>
