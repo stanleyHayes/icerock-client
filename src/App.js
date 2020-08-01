@@ -3,7 +3,6 @@ import './App.css';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import ScrollToTop from "./components/shared/ScrollToTop";
 import AboutPage from "./pages/about/AboutPage";
-import ContactPage from "./pages/contact/ContactPage";
 import HomePage from "./pages/home/HomePage";
 import ProductsPage from "./pages/products/ProductsPage";
 import ProductDetailPage from "./pages/products/ProductDetailPage";
@@ -19,10 +18,6 @@ function App() {
             <AboutPage />
           </Route>
 
-          <Route path="/contact" exact={true}>
-            <ContactPage />
-          </Route>
-
           <Route path="/" exact={true}>
             <HomePage />
           </Route>
@@ -35,7 +30,7 @@ function App() {
             <ProductDetailPage />
           </Route>
 
-          <Route path="/whatsnew" exact={true}>
+          <Route path="/whats-new" exact={true}>
             <WhatsNewPage />
           </Route>
 
