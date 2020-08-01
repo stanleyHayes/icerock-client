@@ -64,7 +64,7 @@ function DesktopHeader() {
 
                     <Grid item={true}>
                             <a
-                                href="https://shop.icerock.com"
+                                href="https://icerock-shop.vercel.app"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className={`featured-link white-text font-size-small center-align uppercase font-weight-bold`}>

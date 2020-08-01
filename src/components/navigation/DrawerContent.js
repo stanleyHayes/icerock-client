@@ -98,7 +98,7 @@ function DrawerContent({handleDrawerClose}) {
                             <p>
                                 <Button className={classes.button} variant="outlined" size="small">
                                     <a
-                                        href="https://shop.icerock.com"
+                                        href="https://icerock-shop.vercel.app"
                                         target="_blank"
                                         rel="noreferrer noopener"
                                         className={`${classes.button}  ${classes.link} center-align uppercase font-weight-bold`}>
