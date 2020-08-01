@@ -1,5 +1,7 @@
+import {NEWS} from "./information.data";
+
 const INITIAL_STATE = {
-    news: [],
+    news: NEWS,
     error: null,
     loading: false
 }

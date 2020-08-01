@@ -1,5 +1,7 @@
+import {REVIEWS} from "./reviews.data";
+
 const INITIAL_STATE = {
-    reviews: [],
+    reviews: REVIEWS,
     error: null,
     loading: false
 }

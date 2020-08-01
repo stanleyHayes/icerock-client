@@ -1,5 +1,7 @@
+import {PRODUCTS} from "./products.data";
+
 const INITIAL_STATE = {
-    products: [],
+    products: PRODUCTS,
     selectedProduct: null,
     error: null,
     loading: false
