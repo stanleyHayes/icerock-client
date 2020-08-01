@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, Toolbar, Button} from "@material-ui/core";
+import {Grid, Toolbar} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
 
@@ -63,15 +63,13 @@ function DesktopHeader() {
                     </Grid>
 
                     <Grid item={true}>
-                        <Button className={classes.button} variant="outlined" size="small">
                             <a
                                 href="https://shop.icerock.com"
                                 target="_blank"
                                 rel="noreferrer noopener"
-                                className={`${classes.link} white-text font-size-small center-align uppercase font-weight-bold`}>
+                                className={`featured-link white-text font-size-small center-align uppercase font-weight-bold`}>
                                 Shop
                             </a>
-                        </Button>
                     </Grid>
 
                     <Grid item={true}>
@@ -83,12 +81,6 @@ function DesktopHeader() {
                     <Grid item={true}>
                         <Link to="/products" className="nav-link uppercase font-size-small font-weight-bold text">
                             products
-                        </Link>
-                    </Grid>
-
-                    <Grid item={true}>
-                        <Link to="/contact" className="nav-link uppercase font-size-small font-weight-bold text">
-                            Contact us
                         </Link>
                     </Grid>
 

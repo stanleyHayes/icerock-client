@@ -283,6 +283,10 @@ html, body {
   font-size: 14px;
 }
 
+.font-size-tiny{
+  font-size: 12px;
+}
+
 .platform {
   padding-bottom: 4px;
   display: inline-block;
@@ -372,7 +376,7 @@ html, body {
 
 @media only screen and (max-width: 600px) {
   .responsive-text {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -491,7 +495,7 @@ html, body {
 }
 
 .font-size-huge{
-  font-size: 72px;
+  font-size: 48px;
 }
 
 .light-blue-text{
@@ -503,5 +507,56 @@ html, body {
 }
 
 .shadow:hover{
-  box-shadow: 5px 5px 3px #dddddd;
+  box-shadow: 5px 5px 2px #dddddd;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  overflow: hidden;
+  background: #333333;
+  position: relative;
+  perspective: 100px;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.about-header::after {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url("/images/hero-image-big.jpg") no-repeat top;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+}
+
+.black{
+  background-color: #000000;
+}
+
+.text-align-justify{
+  text-align: justify;
+}
+
+.featured-link{
+  background-color: green;
+  padding: 4px 16px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+  border: 2px green solid;
+}
+
+.featured-link:hover{
+  color: green;
+  background-color: white;
+  border: 2px green solid;
 }

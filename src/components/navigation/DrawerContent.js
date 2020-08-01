@@ -133,13 +133,6 @@ function DrawerContent({handleDrawerClose}) {
                             </p>
                             <Divider variant="fullWidth"/>
 
-                            <p>
-                                <Link to="/contact"
-                                      className={`  ${classes.link} center-align margin-vertical-small uppercase font-weight-bold`}>
-                                    Contact Us
-                                </Link>
-                            </p>
-
                             <Divider variant="fullWidth"/>
 
                             <p>
