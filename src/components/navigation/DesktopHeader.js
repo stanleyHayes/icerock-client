@@ -57,7 +57,7 @@ function DesktopHeader() {
 
                 <Grid item={true} container={true} lg={8} justify="center" spacing={4} alignItems="center">
                     <Grid item={true}>
-                        <Link to="/" className="nav-link uppercase font-size-small font-weight-bold text">
+                        <Link to="/" className="nav-link uppercase font-size-small font-weight-bold">
                             Home
                         </Link>
                     </Grid>
@@ -73,25 +73,25 @@ function DesktopHeader() {
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/whats-new" className="nav-link uppercase font-size-small  font-weight-bold text">
+                        <Link to="/whats-new" className="nav-link uppercase font-size-small  font-weight-bold">
                             What's New
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/products" className="nav-link uppercase font-size-small font-weight-bold text">
+                        <Link to="/products" className="nav-link uppercase font-size-small font-weight-bold">
                             products
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/about" className="nav-link uppercase font-size-small font-weight-bold text">
+                        <Link to="/about" className="nav-link uppercase font-size-small font-weight-bold">
                             About
                         </Link>
                     </Grid>
 
                     <Grid item={true}>
-                        <Link to="/reviews" className="nav-link uppercase font-size-small font-weight-bold text">
+                        <Link to="/reviews" className="nav-link uppercase font-size-small font-weight-bold">
                             Reviews
                         </Link>
                     </Grid>

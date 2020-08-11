@@ -218,7 +218,7 @@ function Footer() {
                 </Hidden>
             </div>
 
-            <div className="padding-vertical-large darker-grey">
+            <div className="padding-vertical-large black">
                 <Container>
                     <p className="text-align-center footer-info font-size-tiny grey-light-text">
                         For more information contact Ice Rock.

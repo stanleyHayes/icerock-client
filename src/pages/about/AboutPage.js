@@ -187,7 +187,7 @@ function AboutPage() {
                 <Container>
                     <p className="text-align-center font-weight-bold font-size-large">Connect With Us</p>
                     <Grid container={true} spacing={4} justify="center">
-                        <Grid item={true} xs={12} md={4}>
+                        <Grid item={true} xs={12} md={6}>
                             <div className="shadow">
                                 <Card elevation={0} variant="outlined" raised={false}>
                                     <CardContent>
@@ -198,14 +198,14 @@ function AboutPage() {
                                         <p className="text-align-center font-weight-bold font-size-small uppercase">Visit
                                             Us</p>
                                         <p className="font-size-medium font-weight-bold text-align-center">
-                                            East Legon, Accra Ghana
+                                            Plot 7, Spintex, Accra-Tema-Motoway
                                         </p>
                                     </CardContent>
                                 </Card>
                             </div>
                         </Grid>
 
-                        <Grid item={true} xs={12} md={4}>
+                        <Grid item={true} xs={12} md={6}>
                             <div className="shadow">
                                 <Card elevation={0} variant="outlined" raised={false}>
                                     <CardContent>
@@ -216,14 +216,14 @@ function AboutPage() {
                                         <p className="text-align-center font-weight-bold font-size-small uppercase">Email
                                             Us</p>
                                         <p className="font-size-medium font-weight-bold text-align-center">
-                                            info@icerock.org
+                                            care@icerockgh.com
                                         </p>
                                     </CardContent>
                                 </Card>
                             </div>
                         </Grid>
 
-                        <Grid item={true} xs={12} md={4}>
+                        <Grid item={true} xs={12} md={4} lg={3}>
                             <div className="shadow">
                                 <Card elevation={0} variant="outlined" raised={false}>
                                     <CardContent>
@@ -234,13 +234,68 @@ function AboutPage() {
                                         <p className="text-align-center font-weight-bold font-size-small uppercase">Call
                                             Us</p>
                                         <p className="font-size-medium font-weight-bold text-align-center">
-                                            +2332777777
+                                            055 833 1948
+                                        </p>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </Grid>
+                        <Grid item={true} xs={12} md={6} lg={3}>
+                            <div className="shadow">
+                                <Card elevation={0} variant="outlined" raised={false}>
+                                    <CardContent>
+                                        <div className="text-align-center">
+                                            <img width={25} height={25}
+                                                 src={`${process.env.PUBLIC_URL}/images/phone.svg`}
+                                                 alt="Phone Logo"/>
+                                        </div>
+                                        <p className="text-align-center font-weight-bold font-size-small uppercase">Call
+                                            Us</p>
+                                        <p className="font-size-medium font-weight-bold text-align-center">
+                                            030 210 5633
                                         </p>
                                     </CardContent>
                                 </Card>
                             </div>
                         </Grid>
 
+                        <Grid item={true} xs={12} md={6} lg={3}>
+                            <div className="shadow">
+                                <Card elevation={0} variant="outlined" raised={false}>
+                                    <CardContent>
+                                        <div className="text-align-center">
+                                            <img width={25} height={25}
+                                                 src={`${process.env.PUBLIC_URL}/images/phone.svg`}
+                                                 alt="Phone Logo"/>
+                                        </div>
+                                        <p className="text-align-center font-weight-bold font-size-small uppercase">Call
+                                            Us</p>
+                                        <p className="font-size-medium font-weight-bold text-align-center">
+                                            050 666 1580
+                                        </p>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </Grid>
+
+                        <Grid item={true} xs={12} md={6} lg={3}>
+                            <div className="shadow">
+                                <Card elevation={0} variant="outlined" raised={false}>
+                                    <CardContent>
+                                        <div className="text-align-center">
+                                            <img width={25} height={25}
+                                                 src={`${process.env.PUBLIC_URL}/images/phone.svg`}
+                                                 alt="Phone Logo"/>
+                                        </div>
+                                        <p className="text-align-center font-weight-bold font-size-small uppercase">Call
+                                            Us</p>
+                                        <p className="font-size-medium font-weight-bold text-align-center">
+                                            057 079 7788
+                                        </p>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </Grid>
                     </Grid>
                 </Container>
             </section>

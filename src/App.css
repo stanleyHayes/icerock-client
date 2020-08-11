@@ -4,8 +4,14 @@ html, body {
 
 .nav-link {
   text-decoration: none;
-  color: darkblue;
+  color: #777777;
 }
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
 
 .text-align-center {
   text-align: center;
